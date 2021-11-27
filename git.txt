@@ -1,0 +1,26 @@
+﻿Add tài khoản:
+	git --global user.name "Tên"
+	git --global user.email "Email"
+
+Tạo repo trong máy: git init
+Xem trạng thái file: git status
+Add file: git add tên_file
+Commit: git commit -m "Ghi_commit" (giống comment)
+Xem thông tin người tạo: git log
+
+Copy chạy tiếp:
+	git remote add origin https://github.com/thanhnd-ptit/nhom4-ktlt.git
+	git push -u origin master
+
+Nếu lỗi "src refspec main does not match any":
+	git commit -m "initial commit"
+	git push origin master
+
+Mỗi lần thay đổi file và đẩy file lên:
+	git add .
+	git push
+
+
+
+
+	

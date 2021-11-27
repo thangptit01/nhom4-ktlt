@@ -1,0 +1,92 @@
+.profile {
+    font-size: 20px;
+    position: absolute;
+    left: 35px;
+    top: -7px;
+    color: white;
+}
+
+.infor {
+    background-color: white;
+    width: 140px;
+    border: 15px solid rgb(4, 179, 223);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 70px;
+    margin: 10px;
+}
+
+.stu-name {
+    position: absolute;
+    left: 50px;
+    top: 35px;
+}
+
+.title-name {
+    font-size: large;
+    font-weight: bold;
+}
+
+.stu-birthday {
+    position: absolute;
+    left: 50px;
+    top: 60px;
+}
+
+.title-birth {
+    font-size: large;
+    font-weight: bold;
+}
+
+.birthday {
+    position: absolute;
+    left: 50px;
+    top: 60px;
+}
+
+.title-birth {
+    font-size: large;
+    font-weight: bold;
+}
+
+.stu-code {
+    position: absolute;
+    left: 50px;
+    top: 85px;
+}
+
+.title-code {
+    font-size: large;
+    font-weight: bold;
+}
+
+.stu-class {
+    position: absolute;
+    left: 50px;
+    top: 110px;
+}
+
+.title-class {
+    font-size: large;
+    font-weight: bold;
+}
+
+.stu-major {
+    position: absolute;
+    left: 50px;
+    top: 135px;
+}
+
+.title-major {
+    font-size: large;
+    font-weight: bold;
+}
+
+.image-next-to {
+    position: fixed;
+    left: 500px;
+    width: 700px;
+    top: 15px;
+}
