@@ -1,0 +1,559 @@
+@charset "UTF-8";
+
+/*
+Template Name: Bolby
+Version: 1.0
+Author: PxlSolutions
+Author URI: http://themeforest.net/user/pxlsolutions
+Description: Portfolio/CV/Resume HTML Template
+
+[TABLE OF CONTENTS]
+
+01. Base
+02. Typography
+03. Preloader
+04. Header
+05. Sections
+06. Parallax Shapes
+07. Skills
+15. Contact
+16. Helper
+17. Dark Mode
+18. Buttons
+19. Bootstrap Components
+20. Theme elements
+21. Slick
+22. Responsive
+
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap&amp;subset=cyrillic");
+
+/*=================================================================*/
+
+
+/*                      BASE                              
+/*=================================================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0 !important;
+    overflow: auto !important;
+}
+
+body {
+    color: #5E5C7F;
+    background-color: #F9F9FF;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar img {
+    max-width: 100px;
+    height: auto;
+}
+
+.text-center img {
+    border-radius: 50%;
+    border: 0px solid #a1a1a1;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.intro img {
+    border-radius: 50%;
+    border: 0px solid #a1a1a1;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.relative {
+    position: relative;
+}
+
+
+/*=================================================================*/
+
+
+/*                      TYPOGRAPHY                              
+/*=================================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #454360;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+a {
+    color: #FF4C60;
+}
+
+
+/*=================================================================*/
+
+
+/*                      HEADER                              
+/*=================================================================*/
+
+.desktop-header-3 {
+    background: #F9F9FF;
+    padding: 0 0;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.desktop-header-3 .navbar {
+    padding: 0;
+}
+
+.desktop-header-3 .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.desktop-header-3 .nav-link {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0;
+}
+
+.desktop-header-3 .nav-link.active {
+    color: #FFD15C !important;
+}
+
+.desktop-header-3 .nav-link:hover {
+    color: #FFD15C !important;
+}
+
+.desktop-header-3 .navbar-nav li:not(:last-child) {
+    padding-right: 3rem;
+}
+
+@media (min-width: 992px) {
+    .desktop-header-3 .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.desktop-header-3.light .navbar-dark .navbar-nav .nav-link {
+    color: #353353;
+}
+
+
+/*=================================================================*/
+
+
+/*                      SECTIONS                             
+/*=================================================================*/
+
+section {
+    padding-top: 110px;
+    position: relative;
+}
+
+section.home {
+    background: #F9F9FF;
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+section.home .intro {
+    margin: auto;
+    max-width: 540px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+section.home .intro h1 {
+    color: #353353;
+    font-size: 36px;
+}
+
+section.home .intro span {
+    color: #454360;
+    font-size: 16px;
+}
+
+section.home .social-icons li a {
+    color: #353353;
+}
+
+section.home.light .social-icons li a:hover {
+    color: #FFD15C;
+}
+
+.section-title {
+    font-size: 36px;
+    margin: 0;
+    margin-left: 14px;
+    position: relative;
+}
+
+.section-title:before {
+    content: "";
+    background-image: url(../images/dots-bg.svg);
+    display: block;
+    height: 37px;
+    left: -14px;
+    top: -14px;
+    position: absolute;
+    width: 37px;
+}
+
+
+/*=================================================================*/
+
+
+/*                      SKILLS                              
+/*=================================================================*/
+
+.skill-item .skill-info h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.skill-item .skill-info span {
+    font-size: 14px;
+}
+
+
+/*=================================================================*/
+
+
+/*                      CONTACT                              
+/*=================================================================*/
+
+.contact-info {
+    background-image: url("../images/map.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 200px;
+}
+
+.contact-info h3 {
+    font-size: 23px;
+    margin: 0 0 10px;
+}
+
+.icons-phone i {
+    margin-right: 20px;
+}
+
+
+/*=================================================================*/
+
+
+/*                      HELPER                              
+/*=================================================================*/
+
+.help-block.with-errors {
+    color: red;
+    font-size: 12px;
+    padding-left: 30px;
+}
+
+.help-block.with-errors ul {
+    margin-bottom: 0;
+}
+
+.spacer {
+    clear: both;
+}
+
+
+/*=================================================================*/
+
+
+/*                     BUTTONS
+/*=================================================================*/
+
+.btn {
+    border-radius: 30px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    line-height: 1;
+    padding: 12px 32px;
+    position: relative;
+}
+
+.btn-default {
+    color: #FFF;
+    background: #FF4C60;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.btn-default:hover {
+    color: #FFF;
+}
+
+.btn.disabled,
+.btn:disabled {
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+
+/*=================================================================*/
+
+
+/* === Progress Bar === */
+
+.progress {
+    height: 7px;
+    margin-bottom: 0;
+    overflow: hidden;
+    background-color: #F1F1F1;
+    border-radius: 15px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.progress-bar {
+    border-radius: 15px;
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 7px;
+    color: #fff;
+    text-align: center;
+    background-color: #353353;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+
+
+/* === Form Control === */
+
+.form-control {
+    display: block;
+    border-radius: 30px;
+    width: 100%;
+    height: 60px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #454360;
+    background-color: #FFF;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+
+/* === Timeline === */
+
+.timeline {
+    position: relative;
+}
+
+.timeline .timeline-container {
+    padding-left: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+}
+
+.timeline.edu .timeline-container::after {
+    content: "#";
+    background: #FFF;
+    font-family: "simple-line-icons";
+    font-size: 24px;
+    color: #00FFFF;
+    position: absolute;
+    left: -7px;
+    top: 0;
+    z-index: 1;
+}
+
+.timeline .content {
+    position: relative;
+}
+
+.timeline .content .time {
+    color: #8B88B1;
+    font-size: 14px;
+}
+
+.timeline .content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.timeline .content p {
+    margin: 0;
+}
+
+.timeline span.line {
+    position: absolute;
+    width: 1px;
+    background-color: #00FFFF;
+    top: 30px;
+    bottom: 30px;
+    left: 34px;
+}
+
+
+/* === Social Icons === */
+
+.social-icons li:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.social-icons li a {
+    font-size: 21px;
+}
+
+.social-icons.light li a:hover {
+    color: #FFD15C;
+}
+
+
+/* === Go to Top === */
+
+#return-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    border-radius: 100%;
+    display: none;
+    z-index: 4;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 13px;
+    top: 8px;
+    font-size: 16px;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#return-to-top:hover {
+    background: #FF4C60;
+}
+
+
+/* === Helper === */
+
+.bg-white ul {
+    list-style: none !important;
+}
+
+span.title {
+    color: #454360;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+
+/*                      RESPONSIVE SETTINGS
+/*=================================================================*/
+
+@media only screen and (max-width: 991px) {
+    .desktop-header-3 .nav-link {
+        padding: 7px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section.home {
+        padding: 300px 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 920px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 920px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .container {
+        max-width: 1080px;
+    }
+}
