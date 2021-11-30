@@ -1,0 +1,164 @@
+/* reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#header {
+    height: 50px;
+    background-color: #fff;
+}
+
+
+.header__avatar {
+    border-radius: 18px;
+    float: left;
+    height: 100%;
+    margin-left: 15px;
+}
+
+.header-img {
+    border-radius: 100%;
+    display: block;
+    height: 38px;
+    margin-top: 5px;
+    overflow: hidden;
+    width: 38px;
+}
+
+.nav__title a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav__title {
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+    padding-left: 15px;
+    font-size: 1.3rem;
+}
+
+.nav__link-xl {
+    display: block;
+    float: right;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.nav__link-xl i{
+    color: #000;
+}
+
+.nav__link {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+.nav__link i {
+    cursor: pointer;
+}
+
+.nav__link i:hover {
+    color: rgb(231, 31, 31);
+}
+
+.nav__link-s {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 6px;
+}
+
+.nav__link-s {
+    font-size: 1.3rem;
+}
+
+.nav__brand:hover,
+.nav__link a:hover {
+    color: rgb(231, 31, 31);
+}
+
+.nav__link i {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.nav__icon {
+    border-left: rgb(68, 67, 67) solid 1.5px;
+}
+
+#slider {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.slider__img {
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.slider__name-app {
+    margin-top: 24px;
+}
+
+.slider__name-slogan {
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+.slider__icon i:hover {
+    color: rgb(231, 31, 31);
+}
+
+.slider__icon i {
+    color: #000;
+}
+
+.slider__icon {
+    margin-top: 28px;
+
+}
+
+.fab {
+    margin: 0 5px;
+    font-size: 30px;
+}
+
+#footer {
+    display: block;
+    text-align: center;
+    padding: 40px;
+    bottom: 0;
+    color: inherit;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+}
+
+#footer span {
+    display: block;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.footer__text-stress:hover {
+    color: rgb(231, 31, 31);
+}
+
+.footer__text-stress {
+    color: #000;
+}
