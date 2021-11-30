@@ -6,6 +6,12 @@
 html {
   box-sizing: border-box;
 }
+body{
+        margin: 0;
+        padding: 0;
+        background:  no-repeat;
+        background-size: cover;
+    }
 .column {
   float: left;
   width: 33.3%;
@@ -28,7 +34,7 @@ html {
 }
 
 .title {
-  color: grey;
+  color: black;
 }
 
 .button {
@@ -40,41 +46,46 @@ html {
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 96%;
+}
+.chu{
+    color: black;
+}
+.button:hover {
+  background-color: #565;
 }
 
-.button:hover {
-  background-color: #555;
-}
 </style>
 </head>
-<body>
+<body >
 
-<h2>Competitive programming</h2>
-<p>Team project</p>
+<h2 class="chu">Competitive programming</h2>
+<p class="chu">Team project</p>
 <br>
 
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="Capture.PNG" alt="Nguyễn Thành Đạt" style="width:100%">
+      <a  href="https://serene-booth-387c11.netlify.app/" target="_blank"><img src="Capture.PNG" alt="Nguyễn Thành Đạt" style="width:100%"></a>
+      
       <div class="container">
-        <h2>Nguyễn Thành Đạt</h2>
+        <h2 class="chu">Nguyễn Thành Đạt</h2>
         <p class="title">Dev-web</p>
-        <p>Học viện công nghệ bưu chính viễn thông</p>
-        <p>topthuthuat69@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+        <p class="chu">Học viện công nghệ bưu chính viễn thông</p>
+        <p class="chu">topthuthuat69@gmail.com</p>
+        <!-- <button target="_blank" onclick="window.location.href='https://serene-booth-387c11.netlify.app/'" class="button" >Contact</button> -->    
+        <a href="https://serene-booth-387c11.netlify.app/" target="_blank" class="button">Contact</a>
       </div>
     </div>
   </div>
 
   <div class="column">
     <div class="card">
-      <img src="" alt="Mike" style="width:100%">
+      <img src="" alt="" style="width:100%">
       <div class="container">
         <h2></h2>
         <p class="title"></p>
-        <p>.</p>
+        <p></p>
         <p></p>
         <p><button class="button">Contact</button></p>
       </div>
